@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
+import BlogCard from "../components/BlogCard";
+import ProductCard from "../components/ProductCard";
+import SpecialProduct from "../components/SpecialProduct";
 
 function Home() {
     return (
@@ -278,7 +281,220 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <section className="marque-wrapper py-5"></section>
+            <section className="feature-wrapper py-5 home-wrapper-2">
+                <div className="container-xxl">
+                    <div className="row">
+                        <div className="col-12">
+                            <h3 className="section-heading">
+                                Featured Collection
+                            </h3>
+                        </div>
+                        <ProductCard />
+                        <ProductCard />
+                        <ProductCard />
+                        <ProductCard />
+                    </div>
+                </div>
+            </section>
+            <section className="famous-wrapper py-5 home-wrapper-2">
+                <div className="container-xxl">
+                    <div className="row">
+                        <div className="col-12">
+                            <h3 className="section-heading">Famous Products</h3>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-3">
+                            <div className="famous-card position-relative">
+                                <img
+                                    src="/images/famous-01.jfif"
+                                    alt="famous"
+                                    className="img-fluid"
+                                />
+                                <div className="famous-content position-absolute">
+                                    <h5>Pro. Beyond.</h5>
+                                    <h6>Iphone 14 Pro</h6>
+                                    <p>
+                                        From $999 or $41.62/mo. for 24 mo.
+                                        before trade in*
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-3">
+                            <div className="famous-card position-relative">
+                                <img
+                                    src="/images/famous-02.jpg"
+                                    alt="famous"
+                                    className="img-fluid"
+                                />
+                                <div className="famous-content position-absolute">
+                                    <h5 className="text-dark">
+                                        Lovable. Drawable. Magical.{" "}
+                                    </h5>
+                                    <h6 className="text-dark">Ipad</h6>
+                                    <p className="text-dark">
+                                        From $499 or $37.41/mo. for 12 mo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-3">
+                            <div className="famous-card position-relative">
+                                <img
+                                    src="/images/famous-03.jpg"
+                                    alt="famous"
+                                    className="img-fluid"
+                                />
+                                <div className="famous-content position-absolute">
+                                    <h5 className="text-dark">Wonderfull. </h5>
+                                    <h6 className="text-dark">Iphone 14</h6>
+                                    <p className="text-dark">
+                                        From $799 or $32.29/mo. for 24 mo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-3">
+                            <div className="famous-card position-relative">
+                                <img
+                                    src="/images/famous-04.jpg"
+                                    alt="famous"
+                                    className="img-fluid"
+                                />
+                                <div className="famous-content position-absolute">
+                                    <h5 className="text-dark">
+                                        Giving is in full bloom.
+                                    </h5>
+                                    <h6 className="text-dark">Mother's day</h6>
+                                    <p className="text-dark">
+                                        Shop the gift guild.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="special-wrapper py-5 home-wrapper-2">
+                <div className="container-xxl">
+                    <div className="row">
+                        <div className="col-12">
+                            <h3 className="section-heading">
+                                Special Products
+                            </h3>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <SpecialProduct />
+                        <SpecialProduct />
+                        <SpecialProduct />
+                    </div>
+                </div>
+            </section>
+            <section className="popular-wrapper py-5 home-wrapper-2">
+                <div className="container-xxl">
+                    <div className="row">
+                        <div className="col-12">
+                            <h3 className="section-heading">
+                                Our Popular Products
+                            </h3>
+                        </div>
+                        <div className="row">
+                            <ProductCard />
+                            <ProductCard />
+                            <ProductCard />
+                            <ProductCard />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="marque-wrapper py-5 home-wrapper-2">
+                <div className="container-xxl">
+                    <div className="row">
+                        <div className="col-12">
+                            <div className="marquee-inner-wrapper card-wrapper">
+                                <Marquee className="d-flex">
+                                    <div className="mx-4 w-25">
+                                        <img
+                                            src="/images/brand-01.png"
+                                            alt="brand"
+                                            className=""
+                                        />
+                                    </div>
+                                    <div className="mx-4 w-25">
+                                        <img
+                                            src="/images/brand-02.png"
+                                            alt="brand"
+                                            className=""
+                                        />
+                                    </div>
+                                    <div className="mx-4 w-25">
+                                        <img
+                                            src="/images/brand-03.png"
+                                            alt="brand"
+                                            className=""
+                                        />
+                                    </div>
+                                    <div className="mx-4 w-25">
+                                        <img
+                                            src="/images/brand-04.png"
+                                            alt="brand"
+                                            className=""
+                                        />
+                                    </div>
+                                    <div className="mx-4 w-25">
+                                        <img
+                                            src="/images/brand-05.png"
+                                            alt="brand"
+                                            className=""
+                                        />
+                                    </div>
+                                    <div className="mx-4 w-25">
+                                        <img
+                                            src="/images/brand-06.png"
+                                            alt="brand"
+                                            className=""
+                                        />
+                                    </div>
+                                    <div className="mx-4 w-25">
+                                        <img
+                                            src="/images/brand-07.png"
+                                            alt="brand"
+                                            className=""
+                                        />
+                                    </div>
+                                    <div className="mx-4 w-25">
+                                        <img
+                                            src="/images/brand-08.png"
+                                            alt="brand"
+                                            className=""
+                                        />
+                                    </div>
+                                </Marquee>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="blog-wrapper py-5 home-wrapper-2">
+                <div className="container-xxl">
+                    <div className="row">
+                        <div className="col-12">
+                            <h3 className="section-heading">
+                                Our Latest Blogs
+                            </h3>
+                        </div>
+                        <BlogCard />
+                        <BlogCard />
+                        <BlogCard />
+                        <BlogCard />
+                    </div>
+                </div>
+            </section>
         </>
     );
 }

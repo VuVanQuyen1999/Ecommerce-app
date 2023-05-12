@@ -12,6 +12,9 @@
     --color-bf4800: #bf4800;
     --color-f5f5f7: #f5f5f7;
     --color-ededed: #ededed;
+    --color-777777: #777777;
+    --color-1c1c1b: #1c1c1b;
+    --color-fc353c00: #fc353c;
 }
 
 body {
@@ -23,9 +26,26 @@ a {
     display: inline-block;
 }
 
+.card-wrapper {
+    background-color: white;
+    box-shadow: 0 0 10px #0000001a;
+    padding: 15px;
+}
+
+.section-heading {
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
 .form-control:focus {
     box-shadow: none;
     border-color: inherit;
+}
+
+.gap-5 {
+    gap: 5px;
 }
 
 .gap-10 {
@@ -249,3 +269,228 @@ footer .input-group-text {
 /* End Home Wrapper 2 */
 
 /* Home Page End Here */
+
+/* Blog Part */
+
+.blog-card {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.blog-card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.blog-content {
+    padding: 15px;
+}
+
+.blog-content .date {
+    font-size: 13px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: var(--color-777777);
+    padding: 0;
+}
+
+.blog-content .title {
+    font-size: 18px;
+    color: var(--color-131921);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.blog-content p.description {
+    font-size: 13px;
+    line-height: 22px;
+    color: var(--color-777777);
+}
+
+/* Blog Part end here */
+
+/* Product Card */
+
+.product-card {
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.product-card:hover .action-bar {
+    right: 15px;
+}
+
+.product-card:hover .product-image > img:nth-child(1) {
+    display: none;
+}
+
+.product-card:hover .product-image > img:nth-child(2) {
+    display: block;
+}
+
+.product-card .product-details h6.brand {
+    color: var(--color-bf4800);
+    font-size: 13px;
+}
+
+.product-card .product-details h5.product-title {
+    font-size: 15px;
+    color: var(--color-1c1c1b);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-card .product-details p.price {
+    font-size: 16px;
+    color: var(--color-1c1c1b);
+}
+
+.product-card .product-image {
+    height: 270px;
+}
+
+.product-card .product-image img {
+    object-fit: contain;
+}
+
+.product-card .product-image > img:nth-child(2) {
+    display: none;
+}
+
+.action-bar {
+    top: 15%;
+    right: -23px;
+    transition: 0.3s;
+}
+
+.wishlist-icon {
+    top: 2%;
+    right: 15px;
+}
+
+/* Product Card End Here */
+
+/* Special Product Card */
+
+.special-product-card {
+    padding: 20px 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.special-product-card .badge {
+    background-color: var(--color-fc353c00) !important;
+}
+
+.special-product-image {
+    width: 50%;
+}
+
+.special-product-content {
+    width: 50%;
+}
+
+/* Special Product Card End Here */
+
+/* Famous Card */
+
+.famous-card .famous-content {
+    top: 5%;
+    left: 5%;
+}
+
+.famous-card img {
+    border-radius: 10px;
+}
+
+.famous-content h5 {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 7px;
+    text-transform: uppercase;
+}
+.famous-content h6 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+    color: white;
+}
+.famous-content p {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 100;
+    color: white;
+}
+
+/* Famous Card End Here */
+
+/* Our Store */
+
+.filter-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 15px 25px;
+}
+
+.filter-title {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    color: var(--color-1c1c1b);
+    margin-bottom: 20px;
+}
+
+.filter-card ul,
+.filter-card .form-check-label {
+    list-style: none;
+    font-size: 13px;
+    line-height: 30px;
+    color: var(--color-777777);
+}
+
+.sub-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-1c1c1b);
+    margin-top: 25px;
+}
+
+.filter-card .form-check-input {
+    margin-top: 6px;
+}
+
+.filter-card .form-check-input:focus {
+    box-shadow: none;
+    border-color: rgba(0, 0, 0, 0.25);
+}
+
+.filter-card .form-check-input:checked {
+    border-color: var(--color-febd69);
+    background-color: var(--color-febd69);
+}
+
+.colors {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.colors li {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+}
+/* Our Store End Here */
