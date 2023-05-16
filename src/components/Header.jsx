@@ -1,7 +1,11 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
-
+import Compare from "../images/compare.svg";
+import Wishlist from "../images/wishlist.svg";
+import User from "../images/user.svg";
+import Cart from "../images/cart.svg";
+import Menu from "../images/menu.svg";
 function Header() {
     return (
         <>
@@ -32,7 +36,9 @@ function Header() {
                     <div className="row align-items-center">
                         <div className="col-2">
                             <h2>
-                                <Link className="text-white">Dev Quyen</Link>
+                                <Link to="/" className="text-white">
+                                    Dev Quyen
+                                </Link>
                             </h2>
                         </div>
                         <div className="col-5">
@@ -59,10 +65,7 @@ function Header() {
                                         to="/compare-product"
                                         className="d-flex align-items-center gap-10 text-white"
                                     >
-                                        <img
-                                            src="/images/compare.svg"
-                                            alt="compare"
-                                        />
+                                        <img src={Compare} alt="compare" />
                                         <p className="mb-0">
                                             Compare <br /> Products
                                         </p>
@@ -73,10 +76,7 @@ function Header() {
                                         to="/wishlist"
                                         className="d-flex align-items-center gap-10 text-white"
                                     >
-                                        <img
-                                            src="/images/wishlist.svg"
-                                            alt="wishlist"
-                                        />
+                                        <img src={Wishlist} alt="wishlist" />
                                         <p className="mb-0">
                                             Favorite <br /> wishlist
                                         </p>
@@ -87,10 +87,7 @@ function Header() {
                                         to="login"
                                         className="d-flex align-items-center gap-10 text-white"
                                     >
-                                        <img
-                                            src="/images/user.svg"
-                                            alt="user"
-                                        />
+                                        <img src={User} alt="user" />
                                         <p className="mb-0">
                                             Login <br /> My Account
                                         </p>
@@ -101,10 +98,7 @@ function Header() {
                                         to="/cart"
                                         className="d-flex align-items-center gap-10 text-white"
                                     >
-                                        <img
-                                            src="/images/cart.svg"
-                                            alt="cart"
-                                        />
+                                        <img src={Cart} alt="cart" />
                                         <div className="d-flex flex-column gap-10">
                                             <span className="badge bg-white text-dark">
                                                 0
@@ -132,10 +126,7 @@ function Header() {
                                             data-bs-toggle="dropdown"
                                             aria-expanded="false"
                                         >
-                                            <img
-                                                src="/images/menu.svg"
-                                                alt="menu"
-                                            />
+                                            <img src={Menu} alt="menu" />
                                             <span className="me-5 d-inline-block">
                                                 Shop Category
                                             </span>

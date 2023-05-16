@@ -1,6 +1,12 @@
 import React from "react";
 import ReactStars from "react-rating-stars-component";
 import { Link, useLocation } from "react-router-dom";
+import AppleWatch02 from "../images/ap-watch-02.jpg";
+import AppleWatch01 from "../images/ap-watch-01.jpg";
+import Wishlist from "../images/wish.svg";
+import Compare from "../images/prodcompare.svg";
+import View from "../images/view.svg";
+import AddCart from "../images/add-cart.svg";
 
 const ProductCard = ({ grid }) => {
     let location = useLocation();
@@ -10,25 +16,25 @@ const ProductCard = ({ grid }) => {
     return (
         <div
             className={`${
-                location.pathname == "/store" ? `gr-${grid}` : "col-3"
+                location.pathname == "/product" ? `gr-${grid}` : "col-3"
             }`}
         >
             <Link to="/product/:id" className="product-card position-relative">
                 <div className={setHeightImg()}>
                     <img
-                        src="/images/ap-watch-02.jpg"
+                        src={AppleWatch02}
                         alt="product"
                         className="img-fluid h-100"
                     />
                     <img
-                        src="/images/ap-watch-01.jpg"
+                        src={AppleWatch01}
                         alt="product"
                         className="img-fluid h-100"
                     />
                     <div className="wishlist-icon position-absolute">
-                        <Link>
-                            <img src="/images/wish.svg" alt="wishlist" />
-                        </Link>
+                        <button className="border-0 bg-transparent">
+                            <img src={Wishlist} alt="wishlist" />
+                        </button>
                     </div>
                 </div>
                 <div className="product-details">
@@ -61,15 +67,15 @@ const ProductCard = ({ grid }) => {
                 </div>
                 <div className="action-bar position-absolute">
                     <div className="d-flex flex-column gap-15">
-                        <Link>
-                            <img src="/images/prodcompare.svg" alt="compare" />
-                        </Link>
-                        <Link>
-                            <img src="/images/view.svg" alt="view" />
-                        </Link>
-                        <Link>
-                            <img src="/images/add-cart.svg" alt="" />
-                        </Link>
+                        <button className="border-0 bg-transparent">
+                            <img src={Compare} alt="compare" />
+                        </button>
+                        <button className="border-0 bg-transparent">
+                            <img src={View} alt="view" />
+                        </button>
+                        <button className="border-0 bg-transparent">
+                            <img src={AddCart} alt="Add Cart" />
+                        </button>
                     </div>
                 </div>
             </Link>
