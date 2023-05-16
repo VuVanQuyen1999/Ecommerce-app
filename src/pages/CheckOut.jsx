@@ -56,9 +56,14 @@ const CheckOut = () => {
                             >
                                 <div className="w-100">
                                     <select
+                                        defaultValue={"DEFAULT"}
                                         name=""
                                         className="form-control form-select"
                                     >
+                                        <option
+                                            value="DEFAULT"
+                                            disabled
+                                        ></option>
                                         <option value="" selected disabled>
                                             Select Country
                                         </option>
@@ -101,9 +106,14 @@ const CheckOut = () => {
                                 </div>
                                 <div className="flex-grow-1">
                                     <select
+                                        defaultValue={"DEFAULT"}
                                         name=""
                                         className="form-control form-select"
                                     >
+                                        <option
+                                            value="DEFAULT"
+                                            disabled
+                                        ></option>
                                         <option value="" selected disabled>
                                             Select State
                                         </option>

@@ -283,7 +283,12 @@ const OurStore = () => {
                                         name=""
                                         id=""
                                         className="form-control form-select"
+                                        defaultValue={"DEFAULT"}
                                     >
+                                        <option
+                                            disabled
+                                            value="DEFAULT"
+                                        ></option>
                                         <option value="manual">Featured</option>
                                         <option
                                             value="best-selling"
