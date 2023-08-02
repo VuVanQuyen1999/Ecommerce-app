@@ -1,21 +1,21 @@
 import React from "react";
 
-const Color = ({ listColor }) => {
-    const colors = Object.values(listColor);
-    return (
-        <>
-            <ul className="colors ps-0">
-                {colors.map((color, index) => {
-                    return (
-                        <li
-                            key={index}
-                            style={{ backgroundColor: `${color}` }}
-                        ></li>
-                    );
-                })}
-            </ul>
-        </>
-    );
+const Color = ({ listColor, setColor }) => {
+  return (
+    <>
+      <ul className="colors ps-0">
+        {listColor?.map((color, index) => {
+          return (
+            <li
+              onClick={() => setColor(color?._id)}
+              key={index}
+              style={{ backgroundColor: `${color?.title}`, cursor: "pointer" }}
+            ></li>
+          );
+        })}
+      </ul>
+    </>
+  );
 };
 
 export default Color;

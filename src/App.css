@@ -28,6 +28,11 @@ a {
     display: inline-block;
 }
 
+.error {
+    color: red;
+    font-size: 14px;
+}
+
 .card-wrapper {
     background-color: white;
     box-shadow: 0 0 10px #0000001a;
@@ -277,14 +282,21 @@ footer .input-group-text {
 .blog-card {
     background-color: white;
     border-radius: 10px;
+    height: 566px;
+}
+
+.blog-card .card-image {
+    height: 315px;
 }
 
 .blog-card img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    height: 100%;
 }
 
 .blog-content {
+    height: 251px;
     padding: 15px;
 }
 
@@ -367,6 +379,7 @@ footer .input-group-text {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    cursor: pointer;
 }
 
 .product-card .product-details .description {
@@ -378,6 +391,7 @@ footer .input-group-text {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    width: 560px;
 }
 
 .product-card .product-details p.price {
@@ -424,6 +438,7 @@ footer .input-group-text {
 
 .special-product-image {
     width: 50%;
+    display: flex;
 }
 
 .special-product-content {
@@ -658,6 +673,13 @@ footer .input-group-text {
     height: 270px;
 }
 
+.compare-product-card .product-card-image,
+.wishlist-card .wishlist-card-image img {
+    max-width: 100%;
+    height: 100%;
+}
+
+    
 .compare-product-details h5.title,
 .wishlist-card h5.title {
     font-size: 15px;
